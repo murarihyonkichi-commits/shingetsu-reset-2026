@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新月からはじめる身体リセット講座｜参加無料</title>
+<meta name="description" content="ファスティングに興味はあるけど、ひとりでは不安な方へ。参加無料のZoom講座。12/11（金）20:00〜21:00・12/12（土）10:00〜11:00。">
+<meta property="og:title" content="新月からはじめる身体リセット講座｜参加無料">
+<meta property="og:description" content="参加無料・Zoom・60分。12/11（金）20:00〜／12/12（土）10:00〜。はじめてのファスティング、きほんのき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://murarihyonkichi-commits.github.io/shingetsu-reset-2026/">
+<meta property="og:image" content="https://murarihyonkichi-commits.github.io/shingetsu-reset-2026/sky-drink.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6f4f0; --white:#fdfcf9; --ink:#262433; --soft:#625e70; --line:#dcd7cf;
+    --night:#1c1b33; --night2:#34315c; --gold:#c4a15a; --accent:#8a6a2f;
+    --serif:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    --sans:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:2;
+    letter-spacing:.06em;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  /* ---------- はじめの画面（新月の夜空） ---------- */
+  .hero{position:relative;min-height:100svh;color:#fff;overflow:hidden;
+    background:radial-gradient(120% 80% at 70% 20%,var(--night2) 0%,var(--night) 60%,#121124 100%)}
+  .stars{position:absolute;inset:0;width:100%;height:100%}
+  .moon{position:absolute;right:max(6vw,24px);top:12vh;width:clamp(120px,24vw,220px);aspect-ratio:1;border-radius:50%;
+    background:radial-gradient(circle at 40% 40%,#2a2848,#1a1930 70%);
+    box-shadow:0 0 0 1px rgba(232,214,170,.35),0 0 60px 6px rgba(232,214,170,.18),inset 6px 0 18px rgba(232,214,170,.12)}
+  .hero-in{position:relative;z-index:1;min-height:100svh;max-width:1080px;margin:0 auto;padding:14vh 28px 12vh;
+    display:flex;flex-direction:column}
+  .hero .meta{font-size:14.5px;letter-spacing:.32em;color:var(--gold)}
+  .hero .catch{font-family:var(--serif);font-size:clamp(17px,4.4vw,22px);letter-spacing:.2em;margin-top:18px;opacity:.95}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,8.4vw,72px);letter-spacing:.1em;line-height:1.45;margin-top:28px}
+  .hero .offer{margin-top:auto;padding-top:56px}
+  .hero .free{font-family:var(--serif);font-size:clamp(40px,10vw,64px);font-weight:600;letter-spacing:.12em;line-height:1.2;color:#f3e6c4}
+  .hero .free small{font-size:.38em;font-weight:500;letter-spacing:.24em;margin-left:12px;color:#fff}
+  .dates{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px 28px;font-family:var(--serif);font-size:clamp(16px,4vw,19px)}
+  .dates span{padding:6px 0;border-top:1px solid rgba(243,230,196,.5);border-bottom:1px solid rgba(243,230,196,.5)}
+
+  /* ---------- 共通 ---------- */
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  section{padding:120px 0}
+  .label{display:flex;align-items:center;gap:14px;font-size:13px;letter-spacing:.32em;color:var(--accent);margin-bottom:28px}
+  .label::after{content:"";width:48px;height:1px;background:var(--accent);opacity:.6}
+  h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,5.4vw,40px);line-height:1.65;letter-spacing:.08em}
+  .lead{font-family:var(--serif);font-size:18px;line-height:2.2;margin-top:32px}
+  .lead + .lead{margin-top:1.4em}
+  .white{background:var(--white)}
+
+  /* ---------- メッセージ ---------- */
+  .split{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+  .split .photo{aspect-ratio:3/4;overflow:hidden}
+  .split .photo img{width:100%;height:100%;object-fit:cover}
+  .words{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);font-family:var(--serif);font-size:17.5px;line-height:2.1;color:var(--soft)}
+  .words b{font-weight:500;color:var(--ink)}
+
+  /* ---------- こんな方に ---------- */
+  .list{margin-top:48px;border-top:1px solid var(--line);list-style:none;counter-reset:n}
+  .list li{counter-increment:n;display:grid;grid-template-columns:56px 1fr;padding:24px 0;border-bottom:1px solid var(--line);
+    font-family:var(--serif);font-size:18.5px;line-height:1.8}
+  .list li::before{content:counter(n,decimal-leading-zero);font-family:var(--serif);font-size:15px;color:var(--accent);padding-top:4px}
+
+  /* ---------- 講座の中身 ---------- */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line)}
+  .cell{padding:28px 24px 30px 0;border-bottom:1px solid var(--line)}
+  .cell:not(:nth-child(3n+1)){padding-left:24px;border-left:1px solid var(--line)}
+  .cell .no{font-family:var(--serif);font-size:15px;color:var(--accent)}
+  .cell h3{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.6;margin-top:10px}
+  .cell p{font-size:15.5px;color:var(--soft);line-height:1.9;margin-top:8px}
+
+  /* ---------- 日程 ---------- */
+  .sched{display:grid;grid-template-columns:1fr 1fr;margin-top:56px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  .sched > div{padding:40px 32px 40px 0}
+  .sched > div + div{padding-left:40px;border-left:1px solid var(--line)}
+  .sched .k{font-size:14.5px;letter-spacing:.24em;color:var(--soft)}
+  .sched .v{font-family:var(--serif);font-weight:500;font-size:clamp(30px,5.6vw,46px);line-height:1.35;margin-top:10px;letter-spacing:.04em}
+  .sched .v small{font-size:.5em;letter-spacing:.1em;margin-left:4px}
+  .sched .t{font-family:var(--serif);font-size:22px;margin-top:6px}
+  .sched .n{font-size:15.5px;color:var(--soft);margin-top:10px;line-height:1.9}
+  .info{margin-top:40px;border-top:1px solid var(--line)}
+  .info div{display:grid;grid-template-columns:120px 1fr;padding:18px 0;border-bottom:1px solid var(--line)}
+  .info dt{font-size:14.5px;letter-spacing:.2em;color:var(--soft)}
+  .info dd{font-family:var(--serif);font-size:17.5px;line-height:1.9}
+  .info dd b{font-weight:600;color:var(--accent)}
+  .note{font-size:14.5px;color:var(--soft);margin-top:14px;line-height:1.9}
+
+  /* ---------- ボタン ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:space-between;gap:40px;margin-top:48px;min-width:320px;
+    background:var(--night);color:var(--white);text-decoration:none;font-size:17px;letter-spacing:.16em;padding:22px 28px;
+    transition:background .25s ease}
+  .btn:hover{background:var(--accent)}
+  .btn svg{width:28px;height:10px;stroke:currentColor;fill:none;stroke-width:1.2}
+  .btn-sub{display:block;font-size:14.5px;color:var(--soft);margin-top:12px}
+
+  /* ---------- 講師 ---------- */
+  .host{display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start;margin-top:48px}
+  .host img{width:200px;height:250px;object-fit:cover}
+  .host h3{font-family:var(--serif);font-weight:500;font-size:24px;letter-spacing:.16em}
+  .host .t{font-size:14.5px;color:var(--soft);margin-top:4px;line-height:1.9}
+  .host p.m{font-family:var(--serif);font-size:17.5px;line-height:2.2;margin-top:20px}
+
+  /* ---------- よくある質問 ---------- */
+  .faq{margin-top:48px;border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line)}
+  summary{cursor:pointer;list-style:none;padding:24px 40px 24px 0;font-family:var(--serif);font-size:18px;line-height:1.7;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-family:var(--serif);font-size:22px;color:var(--accent);transition:transform .25s}
+  details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+  details p{padding:0 0 26px;font-size:16px;color:var(--soft);line-height:2}
+
+  /* ---------- 最後 ---------- */
+  .final{position:relative;color:#fff;background:radial-gradient(120% 90% at 30% 10%,var(--night2),var(--night) 65%,#121124);overflow:hidden}
+  .final h2{color:#fff}
+  .final .lead{color:rgba(255,255,255,.9)}
+  .final .btn{background:#f3e6c4;color:var(--night)}
+  .final .btn:hover{background:var(--gold);color:var(--night)}
+  .final .btn-sub{color:rgba(255,255,255,.75)}
+  footer{padding:40px 28px 120px;text-align:center;font-size:13px;letter-spacing:.2em;color:var(--soft)}
+
+  /* ---------- 下に固定のバー ---------- */
+  .bar{position:fixed;left:0;right:0;bottom:0;z-index:10;background:rgba(246,244,240,.95);backdrop-filter:blur(10px);
+    border-top:1px solid var(--line);transform:translateY(110%);transition:transform .35s ease;padding-bottom:env(safe-area-inset-bottom)}
+  .bar.show{transform:none}
+  .bar-in{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:12px 20px}
+  .bar-txt{flex:1;font-family:var(--serif);font-size:15px;line-height:1.5}
+  .bar-txt span{display:block;font-family:var(--sans);font-size:13px;color:var(--soft)}
+  .bar a{background:var(--night);color:var(--white);text-decoration:none;font-size:15px;letter-spacing:.12em;padding:14px 22px;white-space:nowrap}
+
+  /* ふわっと出る */
+  .fade{opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1s ease}
+  .fade.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  /* ---------- スマホ ---------- */
+  @media (max-width:760px){
+    section{padding:88px 0}
+    .wrap{padding:0 24px}
+    .moon{top:8vh}
+    .hero-in{padding-top:30vh}
+    .hero h1{font-size:clamp(26px,8vw,40px);letter-spacing:.04em}
+    .split{grid-template-columns:1fr;gap:48px}
+    .split .photo{aspect-ratio:4/5;margin:0 -24px}
+    .grid{grid-template-columns:1fr}
+    .cell,.cell:not(:nth-child(3n+1)){padding:22px 0;border-left:none}
+    .sched{grid-template-columns:1fr}
+    .sched > div,.sched > div + div{padding:32px 0;border-left:none}
+    .sched > div + div{border-top:1px solid var(--line)}
+    .info div{grid-template-columns:96px 1fr}
+    .btn{min-width:0;width:100%}
+    .host{grid-template-columns:1fr;gap:28px}
+    .host img{width:160px;height:200px}
+    .lead{font-size:17px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="stars" aria-hidden="true" id="stars"></svg>
+  <div class="moon" aria-hidden="true"></div>
+  <div class="hero-in">
+    <p class="meta">参加無料 ／ Zoom ／ 60分</p>
+    <h1>新月からはじめる<br>身体リセット講座</h1>
+    <p class="catch">はじめてのファスティング、きほんのき。</p>
+    <div class="offer">
+      <p class="free">無料<small>オンライン講座</small></p>
+      <p class="dates"><span>12月11日（金）20:00 – 21:00</span><span>12月12日（土）10:00 – 11:00</span></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap split">
+      <div class="photo fade"><img src="sky-drink.jpg" alt="青空を背景に、グラスに入ったドリンクを持つ手" loading="lazy"></div>
+      <div class="fade">
+        <p class="label">MESSAGE</p>
+        <h2>ファスティング、<br>気になるけど、<br>ひとりだと不安。</h2>
+        <p class="lead">「お腹がすいて倒れないかな」「頭が痛くなったらどうしよう」「家族のごはんはどうするの？」――はじめてのファスティングは、わからないことだらけですよね。</p>
+        <p class="lead">新月は、新しいことを始めるのにぴったりのタイミング。この講座では、身体を休ませる「1日ファスティング」のやり方と、不安なところを、やさしくお話しします。ひとりで悩まず、まずは気軽に聞きに来てください。</p>
+        <p class="words">身体は、食べたもので作られる。<br>心は、聞いた言葉で作られる。<br><b>未来は、話した言葉で作られる。</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="white">
+    <div class="wrap fade">
+      <p class="label">FOR YOU</p>
+      <h2>こんな方に、来てほしい講座です。</h2>
+      <ol class="list">
+        <li>ファスティングに興味はあるけど、やったことがない</li>
+        <li>ひとりでやるのは不安。誰かと一緒にやってみたい</li>
+        <li>年末年始の前に、身体をいちど休ませてあげたい</li>
+        <li>新月に合わせて、新しい一歩をふみ出したい</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap fade">
+      <p class="label">CONTENTS</p>
+      <h2>講座でお話しすること</h2>
+      <div class="grid">
+        <div class="cell"><p class="no">01</p><h3>ファスティングで、身体に起こること</h3><p>食べない時間をつくると、身体の中で何が起きるのか。わかりやすくお話しします。</p></div>
+        <div class="cell"><p class="no">02</p><h3>なぜ「新月」なのか</h3><p>始まりと手放しのタイミング。気持ちを切りかえるきっかけにもなります。</p></div>
+        <div class="cell"><p class="no">03</p><h3>3日間の流れ</h3><p>準備食 → ファスティング → 回復食。何をどう食べるのかをご紹介します。</p></div>
+        <div class="cell"><p class="no">04</p><h3>よくある不安にお答え</h3><p>お腹がすく？ 頭が痛くなる？ 仕事や家事はできる？ 正直にお答えします。</p></div>
+        <div class="cell"><p class="no">05</p><h3>みんなでやる新月ファスティング</h3><p>講座のさいごに、仲間と一緒に取り組むプログラムのご案内があります。</p></div>
+        <div class="cell"><p class="no">06</p><h3>質問タイム</h3><p>気になっていること、なんでも聞いてください。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="white" id="date">
+    <div class="wrap fade">
+      <p class="label">SCHEDULE</p>
+      <h2>日程</h2>
+      <p class="lead" style="margin-top:20px">2回とも同じ内容です。ご都合のよい日を1つ、お選びください。</p>
+      <div class="sched">
+        <div>
+          <p class="k">金曜日の夜</p>
+          <p class="v">12月11日<small>（金）</small></p>
+          <p class="t">20:00 – 21:00</p>
+          <p class="n">家事や子育てがひと段落した時間に。</p>
+        </div>
+        <div>
+          <p class="k">土曜日の朝</p>
+          <p class="v">12月12日<small>（土）</small></p>
+          <p class="t">10:00 – 11:00</p>
+          <p class="n">週末の朝、ゆったりした気持ちで。</p>
+        </div>
+      </div>
+      <dl class="info">
+        <div><dt>参加費</dt><dd><b>無料</b></dd></div>
+        <div><dt>場所</dt><dd>オンライン（Zoom）／全国どこからでも</dd></div>
+        <div><dt>時間</dt><dd>60分</dd></div>
+        <div><dt>講師</dt><dd>やすむら ひろみ</dd></div>
+      </dl>
+      <a class="btn" href="https://www.reservestock.jp/page/consecutive_events/48671" target="_blank" rel="noopener">無料講座に申し込む<svg viewBox="0 0 28 10"><path d="M0 5h27M22 1l5 4-5 4"/></svg></a>
+      <span class="btn-sub">申込みページ（リザーブストック）にすすみます。日程を選んでお申し込みください</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap fade">
+      <p class="label">TEACHER</p>
+      <h2>講師</h2>
+      <div class="host">
+        <img src="profile.jpg" alt="やすむらひろみのプロフィール写真" loading="lazy">
+        <div>
+          <h3>やすむら ひろみ</h3>
+          <p class="t">ここからフルネス株式会社　／　心と身体を満たす体質改善コーチ</p>
+          <p class="m">ファスティングを入り口に、心と身体の「自分メンテナンス」をお伝えしています。はじめての方の「こわい」「わからない」に、ひとつずつ寄りそいます。画面の向こうでお会いできるのを楽しみにしています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="white">
+    <div class="wrap fade">
+      <p class="label">Q&amp;A</p>
+      <h2>よくあるご質問</h2>
+      <div class="faq">
+        <details><summary>ファスティングをしたことがありません。</summary><p>大丈夫です。はじめての方に向けた講座です。むずかしい言葉は使わずに、やさしくお話しします。</p></details>
+        <details><summary>講座に出たら、ファスティングをしないといけませんか？</summary><p>いいえ。講座だけのご参加で大丈夫です。お話を聞いてから、やってみるかどうかをご自分で決めてください。</p></details>
+        <details><summary>顔を出さないといけませんか？</summary><p>カメラオフ・マイクオフで参加できます。お気軽にどうぞ。</p></details>
+        <details><summary>何を用意すればいいですか？</summary><p>Zoomが使えるスマホかパソコンがあれば参加できます。メモがあると便利です。</p></details>
+        <details><summary>持病があります。参加できますか？</summary><p>講座を聞くのは、どなたでも大丈夫です。ファスティングをするときは、かかりつけのお医者さんにご相談ください。妊娠中・授乳中の方も、ファスティングはおすすめしていません。</p></details>
+        <details><summary>申し込んだあとは、どうなりますか？</summary><p>お申し込みのあとに届くメールで、Zoomの入り方をお知らせします。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap fade">
+      <h2>はじめの一歩を、<br>みんなと一緒に。</h2>
+      <p class="lead">12月11日（金）20:00〜<br>12月12日（土）10:00〜<br>参加無料・Zoomでお待ちしています。</p>
+      <a class="btn" href="https://www.reservestock.jp/page/consecutive_events/48671" target="_blank" rel="noopener">無料講座に申し込む<svg viewBox="0 0 28 10"><path d="M0 5h27M22 1l5 4-5 4"/></svg></a>
+      <span class="btn-sub">ご質問は <a href="https://lin.ee/8P0Xq7n" target="_blank" rel="noopener">公式LINE</a> からどうぞ</span>
+    </div>
+  </section>
+</main>
+
+<footer>© ここからフルネス株式会社</footer>
+
+<div class="bar" id="bar">
+  <div class="bar-in">
+    <p class="bar-txt">身体リセット講座<span>参加無料　12/11（金）・12/12（土）</span></p>
+    <a href="https://www.reservestock.jp/page/consecutive_events/48671" target="_blank" rel="noopener">申し込む</a>
+  </div>
+</div>
+
+<script>
+  // 夜空に星をちらす
+  const svg = document.getElementById('stars');
+  const W = 1000, H = 1000;
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+  for (let i = 0; i < 140; i++) {
+    const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    c.setAttribute('cx', Math.random() * W);
+    c.setAttribute('cy', Math.random() * H);
+    c.setAttribute('r', Math.random() * 1.4 + .3);
+    c.setAttribute('fill', '#fff');
+    c.setAttribute('opacity', (Math.random() * .6 + .15).toFixed(2));
+    svg.appendChild(c);
+  }
+  // スクロールでふわっと表示
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .1 });
+  document.querySelectorAll('.fade').forEach(el => io.observe(el));
+  // はじめの画面を過ぎたら下のバーを出す
+  const bar = document.getElementById('bar');
+  const onScroll = () => bar.classList.toggle('show', window.scrollY > window.innerHeight * .8);
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+</script>
+</body>
+</html>
